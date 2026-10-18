@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hashmat Bahadari">
+  <rect width="64" height="64" rx="14" fill="#0A2540"/>
+  <path d="M15 17v30M15 32h14M29 17v30" stroke="#fff" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <path d="M37 17v30h7.5a7.5 7.5 0 0 0 0-15H37h6a7 7 0 0 0 0-15h-6" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="52" cy="51" r="4" fill="#1479C9"/>
+</svg>
