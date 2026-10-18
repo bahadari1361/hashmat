@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digitale Projektsteuerung für Wärmepumpen-Projekte | Hashmat Bahadari</title>
+<meta name="description" content="Ein Trello-Board, das mitdenkt: Jede Karte ist ein Kundenprojekt, jede Phase hat ihre Checkliste, und Power Automate sorgt dafür, dass kein Schritt übersprungen wird.">
+<link rel="canonical" href="https://bahadari.de/projekte/projektsteuerung-waermepumpe/">
+<link rel="alternate" hreflang="de" href="https://bahadari.de/projekte/projektsteuerung-waermepumpe/">
+<link rel="alternate" hreflang="en" href="https://bahadari.de/en/projects/heat-pump-project-control/">
+<link rel="alternate" hreflang="x-default" href="https://bahadari.de/projekte/projektsteuerung-waermepumpe/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Digitale Projektsteuerung für Wärmepumpen-Projekte | Hashmat Bahadari">
+<meta property="og:description" content="Ein Trello-Board, das mitdenkt: Jede Karte ist ein Kundenprojekt, jede Phase hat ihre Checkliste, und Power Automate sorgt dafür, dass kein Schritt übersprungen wird.">
+<meta property="og:url" content="https://bahadari.de/projekte/projektsteuerung-waermepumpe/">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#0A2540">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/schibsted-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/style.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Hauptnavigation">
+    <a class="brand" href="../../">
+      <img src="../../assets/img/logo.svg" alt="" width="38" height="38">
+      <span><strong>Hashmat Bahadari</strong><em>IT &amp; Digitale Automatisierung</em></span>
+    </a>
+    <ul class="menu" id="menu"><li><a href="../../leistungen/">Leistungen</a></li><li><a href="../../projekte/" aria-current="page">Projekte</a></li><li><a href="../../ueber-mich/">Über mich</a></li><li><a href="../../zertifizierungen/">Zertifizierungen</a></li><li><a href="../../kontakt/">Kontakt</a></li><li class="menu-cta"><a class="btn btn-primary btn-sm" href="https://outlook.office.com/book/HashmatBahadariITDigitalAutomation@bahadari.de/" target="_blank" rel="noopener">Termin vereinbaren</a></li></ul>
+    <div class="nav-tools">
+      <a class="lang" href="../../en/projects/heat-pump-project-control/" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
+      <a class="btn btn-primary btn-sm" href="https://outlook.office.com/book/HashmatBahadariITDigitalAutomation@bahadari.de/" target="_blank" rel="noopener">Termin vereinbaren</a>
+      <button class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Menü öffnen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap">
+<p class="crumbs"><a href="../../">Start</a> / <a href="../../projekte/">Projekte</a></p>
+<h1>Digitale Projektsteuerung für Wärmepumpen-Projekte</h1>
+<p class="lead">Ein Trello-Board, das mitdenkt: Jede Karte ist ein Kundenprojekt, jede Phase hat ihre Checkliste, und Power Automate sorgt dafür, dass kein Schritt übersprungen wird.</p>
+</div></section>
+<section class="section"><div class="wrap split">
+<article class="prose">
+  <h2>Ausgangslage</h2><p>Die Projektleiter eines regionalen Haustechnik-Betriebs steuerten Wärmepumpen-Projekte über Excel-Listen, E-Mails und Erinnerung. Was der nächste Schritt in einem Projekt war, wusste oft nur eine Person. Übergaben und Nachfassen hingen am Gedächtnis.</p>
+  <h2>Vorgehen</h2><ol class="steps"><li><strong>Prozess modellieren</strong>Gemeinsam mit den Projektleitern habe ich den Weg von der Anfrage bis zur Abnahme in elf Phasen gegliedert – inklusive „Zurückgestellt“ und „Verloren“.</li><li><strong>Checklisten je Phase</strong>Jede operative Phase erhält eine standardisierte Checkliste. Die Anfragephase ist in sieben Themengruppen aufgeteilt, von Technischen Grunddaten bis Warmwasser.</li><li><strong>Karten automatisch erzeugen</strong>Ein Power-Automate-Flow liest den Projektbestand aus Excel, legt über die Trello-REST-API Karten an und erzeugt die Checklisten samt Punkten.</li><li><strong>Nächste Aufgabe im Titel</strong>Der Kartentitel folgt dem Muster PL-Kürzel | Projektnummer | Kunde | nächste Aufgabe. Der letzte Teil aktualisiert sich aus dem ersten offenen Checklistenpunkt.</li><li><strong>Phasenwechsel absichern</strong>Wird eine Karte verschoben, obwohl Punkte offen sind, setzt der Flow sie zurück und listet die offenen Punkte als Kommentar. Erledigte Checklisten bleiben als Verlauf erhalten.</li><li><strong>In Teams einbinden</strong>Das Board läuft als Registerkarte in Microsoft Teams. Nach Auftragserteilung dient ein Teams-Projektraum für Baustellenfotos, Dokumente und die Abstimmung mit Monteuren.</li></ol>
+  <div class="result"><h2>Ergebnis</h2><ul><li>Jeder Projektleiter sieht seine Projekte mit dem nächsten konkreten Schritt direkt im Titel</li><li>Geschäftsführung und Büro sehen alle Projekte auf einen Blick</li><li>Kein Phasenwechsel ohne vollständige Checkliste</li><li>Rollout zunächst als Pilot mit einem Projektleiter, danach für das gesamte Team</li></ul></div>
+  <h2>Technische Details</h2><p>Die Checklisten-Vorlagen liegen als JSON im Flow und werden in verschachtelten Schleifen per HTTP-POST an /1/checklists und /checkItems übergeben. Ein täglicher Sync-Flow gleicht Excel, Trello und das interne System ab.</p>
+  <nav class="pager" aria-label="Projektnavigation">
+    <a href="../../projekte/it-sicherheit-grossumgebung/"><span>Vorheriges Projekt</span>IT-Sicherheit in einer Umgebung mit 2.500+ Nutzern</a>
+    <a href="../../projekte/rollenbasiertes-intranet/" style="text-align:right"><span>Nächstes Projekt</span>Rollenbasiertes Intranet und Wissensbasis</a>
+  </nav>
+</article>
+<aside class="aside-box">
+  <h3>Projektdaten</h3>
+  <dl>
+    <dt>Art</dt><dd>Konzept, Umsetzung, Pilot</dd>
+    <dt>Meine Rolle</dt><dd>Konzept, Flow-Entwicklung, API-Integration</dd>
+    <dt>Werkzeuge</dt><dd><ul class="tags" style="margin-top:.4rem"><li>Trello</li><li>Trello REST API</li><li>Power Automate</li><li>Microsoft Teams</li><li>Excel</li><li>Outlook</li></ul></dd>
+  </dl>
+  <a class="btn btn-primary btn-sm" href="https://outlook.office.com/book/HashmatBahadariITDigitalAutomation@bahadari.de/" target="_blank" rel="noopener">Termin vereinbaren</a>
+</aside>
+</div></section>
+<section class="section-tight"><div class="wrap"><div class="cta-band">
+<div><h2>Haben Sie einen Ablauf, der Sie jede Woche Zeit kostet?</h2><p>In einem kostenlosen Erstgespräch (30 Minuten) schauen wir uns an, was sich vereinfachen oder automatisieren lässt.</p></div>
+<div class="btn-row"><a class="btn btn-light" href="https://outlook.office.com/book/HashmatBahadariITDigitalAutomation@bahadari.de/" target="_blank" rel="noopener">Termin vereinbaren</a>
+<a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.55)" href="mailto:HashmatBahadariITDigitalAutomation@bahadari.de">E-Mail schreiben</a></div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../../"><img src="../../assets/img/logo.svg" alt="" width="38" height="38"><span><strong>Hashmat Bahadari</strong><em>IT &amp; Digitale Automatisierung</em></span></a>
+        <p class="small" style="color:#A9C1D9">IT-Systemadministration, Microsoft 365, Azure und Prozessautomatisierung für Unternehmen und Privatkunden. Aus Bremen, remote und vor Ort.</p>
+      </div>
+      <div><h4>Leistungen</h4><ul><li><a href="../../automatisierung/">Automatisierung</a></li><li><a href="../../microsoft-cloud/">Microsoft Cloud</a></li><li><a href="../../systemadministration/">Systemadministration</a></li><li><a href="../../intranet-wissensbasis/">Intranet &amp; Wissensbasis</a></li></ul></div>
+      <div><h4>Seiten</h4><ul><li><a href="../../">Start</a></li><li><a href="../../projekte/">Projekte</a></li><li><a href="../../ueber-mich/">Über mich</a></li><li><a href="../../zertifizierungen/">Zertifizierungen</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul>
+        <li><a href="https://outlook.office.com/book/HashmatBahadariITDigitalAutomation@bahadari.de/" target="_blank" rel="noopener">Termin vereinbaren</a></li>
+        <li><a href="mailto:HashmatBahadariITDigitalAutomation@bahadari.de">E-Mail schreiben</a></li>
+        <li><a href="https://github.com/bahadari1361" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="../../kontakt/">Kontakt</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Hashmat Bahadari. Alle Rechte vorbehalten.</span>
+      <span><a href="../../impressum/">Impressum</a> &nbsp; <a href="../../datenschutz/">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+</body>
+</html>
